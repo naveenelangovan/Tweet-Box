@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <form id="form">
+        <label for="text">Share Your Thoughts</label>
+        <textarea name="" id="text" required cols="30" rows="10"></textarea>
+        <input type="submit" id="btn" />
+        <p id="characters-length-output">(<span id="characters-length">0</span>/160) Characters</p>
+        <span id="spn2" class="spn">Characters should be within 160 Characters</span>
+        
+    </form>
+    <span id="spn1" class="spn">Your Tweet is Posted to Public</span>
+    
+    <section id="post">
+        <h3>Shared Tweets <i class="fa-regular fa-comment-dots"></i></h3>
+
+    </section>
+
+    <style>
+        #spn1, #spn2 {
+            color: rgb(39, 71, 255);
+        }
+        .spn {
+            display: none;
+        }
+        #text {
+            display: flex;
+        }
+    </style> 
+
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
